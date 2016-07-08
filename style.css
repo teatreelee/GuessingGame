@@ -1,6 +1,6 @@
 body {
 	font-family: 'Quicksand', sans-serif;
-	background: url(bg-questionmark.gif);
+	background: url(images/bg-questionmark.gif);
 }
 h1 {
 	text-align: center;
@@ -8,22 +8,41 @@ h1 {
 	font-weight: bold;
 }
 
-.main {
-	padding: 50px;
+.guess {
+	display: block;
+	float: none;
+	width: 100%;
+	margin: 0 30%;
+}
+
+.container {
+	/*padding: 50px;
 	margin: 100px 150px 50px 150px;
-	text-align: center;
+	text-align: center;*/
+	margin-top: 10%;
 	font-size: 20px;
 	background-color: rgb(240, 240, 245);
 }
 
+#directions {
+	margin: 20px 100px;
+}
+
+#info{
+	text-align: center;
+}
 .buttons {
 	text-align: center;
+	margin: 0 auto;
+
 }
 
 #guess {
-	font-size: 40px;
-	text-align: center;
-	margin: 20px;
+	font-size: 30px;
+	text-align: center;   
+	display: block;
+	float: none;
+	width:40%;
 }
 
 button {

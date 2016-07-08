@@ -3,19 +3,28 @@
 <head>
 	<title>The Guessing Game</title>
 	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class = "main">
+	<div class = "container">
 		<h1> The Guessing Game </h1>
-		<p>The rules are simple. You will have to guess a number between 1 and 100. you will have 5 chances, if you guess the number right you win the game!</p>
+		<div id = 'directions'>
+			<p>The rules are simple. You will have to guess a number between 1 and 100. you will have 5 chances, if you guess the number right you win the game!</p>
+		</div>
 		<p id = 'info'> </p>
-		<input id = 'guess' type="text" placeholder="Enter guess here">
+		<div class="guess">
+			<input id = 'guess' type="text" placeholder="Enter guess">
+		</div>
+		<br>
 		<div class = "buttons">
-			<button onclick ="playersGuessSubmission()" id= "submit">Submit Guess</button>
-			<button onclick ="provideHint()" id = "hint">Get a hint</button>
-			<button onclick ="playAgain()" id="again">Play again</button>
+			<button id= "submit">Submit Guess</button>
+			<button id = "hint">Hint</button>
+			<button id="again">Play again</button>
+			</div>
 		</div>
 		
 	</div>
